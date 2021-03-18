@@ -28,7 +28,7 @@ How to use
 ### Local development startup
     $ $ sudo npm install -g @vue/cli (if vue is not installed yet)
     $ git clone git@gitlab.com:arch-project/arch-frontend.git
-    $ cd daa-frontend
+    $ cd arch-frontend
     $ cp .env.dist .env
     $ yarn install
     $ yarn dev
