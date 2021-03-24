@@ -37,23 +37,13 @@
                 size="md"
             />
 
-            <b-text-field-validated
-                :label="$t('labels.phone')"
-                rules="required|min:11|max:12"
-                type="tel"
-                name="phone"
-                v-model="user.phone"
-                :placeholder="$t('placeholders.phone')"
-                size="md"
-            />
-
-            <b-text-field-validated
-                :label="$t('labels.countryName')"
+            <b-select-validated
                 rules="required"
-                type="text"
-                name="countryName"
-                v-model="user.countryName"
-                :placeholder="$t('placeholders.countryName')"
+                name="roles"
+                v-model="user.roles"
+                multiple
+                :options="roleOptions"
+                :label="$t('labels.roles')"
                 size="md"
             />
 
@@ -83,6 +73,7 @@
     import Vue from 'vue';
     import { ValidationObserver } from 'vee-validate';
     import BTextFieldValidated from '@/components/inputs/BTextFieldValidated.vue';
+    import BSelectValidated from '@/components/inputs/BSelectValidated.vue';
     import AuthService from '@/services/AuthService';
     import { mapActions } from 'vuex';
     import { SHOW_ERROR, SHOW_SUCCESS } from '@/store/modules/notifications/action-types';
@@ -93,6 +84,7 @@
         components: {
             ValidationObserver,
             BTextFieldValidated,
+            BSelectValidated,
         },
         data: () => ({
             loading: false,
@@ -101,9 +93,9 @@
                 password: '',
                 firstName: '',
                 lastName: '',
-                phone: '',
-                countryName: '',
+                roles: [],
             } as UserRegisterInterface,
+            roleOptions: [ 'teacher', 'student_TI', 'student_SI', 'student_CRI' ],
         }),
         methods: {
             ...mapActions('notifications', [

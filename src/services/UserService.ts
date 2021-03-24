@@ -9,6 +9,12 @@ class UserService extends BaseService {
     public getById(id: string): AxiosPromise {
         return this.http.get(`${ this.uri }/${ id }`);
     }
+
+    public searchByEmail(email: string): AxiosPromise {
+        return this.http.post(`${ this.uri }/search/email`, {
+            email,
+        });
+    }
 }
 
 export default new UserService('user');
