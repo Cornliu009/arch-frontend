@@ -14,6 +14,7 @@ export const actions: ActionTree<ProfileState, RootState> = {
         }
 
         const { data } = await UserService.getById(tokenData.userId);
-        commit(SET_USER, new User(data.payload));
+
+        commit(SET_USER, new User(data.payload[0]));
     },
 };
