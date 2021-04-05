@@ -48,6 +48,9 @@
                     <b-tab title="Search by email">
                         <search-user-form />
                     </b-tab>
+                    <b-tab title="Search by email">
+                        <search-user-by-name />
+                    </b-tab>
                 </b-tabs>
             </keep-alive>
         </template>
@@ -63,11 +66,13 @@
     import SearchUserForm from '@/components/forms/SearchUserForm.vue';
     import { SHOW_ERROR } from '@/store/modules/notifications/action-types';
     import UserService from '@/services/UserService';
+    import SearchUserByName from '@/components/forms/SearchUserByName.vue';
 
     export default Vue.extend({
         name: 'Index',
         components: {
             SearchUserForm,
+            SearchUserByName,
         },
         data() {
             return {
