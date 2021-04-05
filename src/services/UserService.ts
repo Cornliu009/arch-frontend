@@ -6,6 +6,10 @@ class UserService extends BaseService {
         super(uri);
     }
 
+    public getAll(): AxiosPromise {
+        return this.http.get(this.uri);
+    }
+
     public getById(id: string): AxiosPromise {
         return this.http.get(`${ this.uri }/${ id }`);
     }

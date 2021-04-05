@@ -31,6 +31,10 @@ export class User implements UserInterface {
         this.roles = data.roles;
         this.email = data.email;
     }
+
+    get isTeacher(): boolean {
+        return this.roles.includes('teacher');
+    }
 }
 
 export interface ProfileState {

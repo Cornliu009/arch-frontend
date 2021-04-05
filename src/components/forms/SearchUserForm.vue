@@ -1,14 +1,10 @@
 <template>
-    <div class="mt-5">
+    <div>
         <b-row>
             <b-col
                 cols="12"
                 md="6"
             >
-                <h4>
-                    Search an user
-                </h4>
-
                 <b-form
                     @submit.prevent="searchUseByEmail"
                 >
