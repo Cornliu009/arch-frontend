@@ -5,6 +5,7 @@ phases:
     commands:
       - npm i npm@latest -g
       - npm install -g @vue/cli
+      - cp .env.dist .env
       - pip install --upgrade pip
       - pip install --upgrade awscli
   pre_build:
