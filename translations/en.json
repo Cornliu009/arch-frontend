@@ -1,0 +1,38 @@
+{
+    "hello_i18n": "Hello",
+    "header": {
+        "login": "Login",
+        "register": "Register"
+    },
+    "titles": {
+        "login": "Login",
+        "register": "Register"
+    },
+    "labels": {
+        "email": "Email",
+        "password": "Password",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "roles": "Role"
+    },
+    "placeholders": {
+        "email": "Enter email",
+        "password": "Enter password",
+        "firstName": "Enter first name",
+        "lastName": "Enter last name",
+        "roles": "Enter role"
+    },
+    "buttons": {
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Register",
+        "search": "Search"
+    },
+    "notifications": {
+        "successfully_register": "Successfully register, now you need to confirm email"
+    },
+    "messages": {
+        "hello": "Hello",
+        "have_a_nice_day": "Have a nice day"
+    }
+}

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Roboto-Slab-Light';
+  src: url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic') format('truetype');
+  src: local('sans-serif'), url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic') format('truetype');
+  font-display: swap;
+}
+
+
+$font-family: 'Noto Sans', sans-serif;
+$text-color: #000000;
+$text-color-p: #6D6D6D;
+
+$font-size-base: 16px !default;
+$font-size-large: ceil(($font-size-base * 1.1)) !default;
+$font-size-small: ceil(($font-size-base * 0.9)) !default;
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default;
+$font-size-h2: floor(($font-size-base * 2.15)) !default;
+$font-size-h3: ceil(($font-size-base * 1.7)) !default;
+$font-size-h4: ceil(($font-size-base * 1.35)) !default;
+$font-size-h5: $font-size-base !default;
+
+$line-height-h1: floor(($font-size-base * 2.6)) !default;
+$line-height-h2: floor(($font-size-base * 2.15)) !default;
+$line-height-h3: ceil(($font-size-base * 1.7)) !default;
+$line-height-h4: ceil(($font-size-base * 1.45)) !default;
+$line-height-h5: $font-size-base !default;
+$line-height-h6: ceil(($font-size-base * 0.85)) !default;
+
+$line-height-base: 24px;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+
+$font-weight-base: $font-weight-normal !default;
