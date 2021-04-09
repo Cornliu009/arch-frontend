@@ -48,7 +48,7 @@
                     <b-tab title="Search by email">
                         <search-user-form />
                     </b-tab>
-                    <b-tab title="Search by email">
+                    <b-tab title="Search by name">
                         <search-user-by-name />
                     </b-tab>
                 </b-tabs>
